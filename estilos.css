@@ -23,6 +23,33 @@ li { margin-bottom: 8px; }
 .card strong { display: block; font-size: 23px; margin-bottom: 6px; }
 .card span { display: block; color: var(--muted); }
 footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; padding-bottom: 42px; }
+.hero { display: grid; grid-template-columns: 1.25fr 1fr; gap: 36px; align-items: center; margin: 0 0 40px; }
+.hero h1 { margin-top: 10px; }
+.movil { justify-self: center; width: 100%; max-width: 300px; }
+.movil video { display: block; width: 100%; height: auto; border-radius: 28px; border: 8px solid #0f3d28; box-shadow: 0 24px 60px rgba(0,0,0,.28); background: #0f3d28; }
+.pares { display: grid; gap: 14px; margin: 18px 0 30px; }
+.par { display: grid; grid-template-columns: 1fr 1fr; gap: 0; background: var(--card); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+.par p { margin: 0; padding: 18px 20px; font-size: 17px; line-height: 1.55; }
+.hoy { color: var(--muted); }
+.hoy::before { content: "Hoy"; display: block; font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 6px; }
+.con { background: #eaf6ee; color: var(--ink); font-weight: 600; }
+.con::before { content: "Con Vademecum Veterinario"; display: block; font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); margin-bottom: 6px; }
+.sellos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 0 0 40px; }
+.sello { background: var(--accent); color: #fff; border-radius: 14px; padding: 18px 20px; }
+.sello strong { display: block; font-size: 19px; margin-bottom: 4px; }
+.sello span { font-size: 15px; opacity: .92; }
+.planes { width: 100%; border-collapse: collapse; margin: 14px 0 10px; font-size: 16px; }
+.planes th { text-align: left; padding: 12px 14px; border-bottom: 2px solid var(--accent); font-size: 17px; }
+.planes th:last-child { color: var(--accent); }
+.planes td { vertical-align: top; padding: 12px 14px; border-bottom: 1px solid var(--line); width: 50%; }
+.tiendas { display: flex; flex-wrap: wrap; gap: 12px; margin: 26px 0 10px; }
+.tienda { display: inline-block; background: var(--accent); color: #fff; font-weight: 700; text-decoration: none; padding: 14px 22px; border-radius: 12px; }
+.tienda:hover { filter: brightness(1.08); }
+.nota, .legal { font-size: 15px; color: var(--muted); }
+.capturas { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 34px 0 10px; }
+.capturas img { width: 100%; height: auto; border-radius: 14px; border: 1px solid var(--line); }
+@media (max-width: 720px) { .hero { grid-template-columns: 1fr; } .movil { max-width: 260px; } .par { grid-template-columns: 1fr; } .sellos { grid-template-columns: 1fr; } .capturas { grid-template-columns: 1fr; max-width: 360px; } .planes, .planes thead, .planes tbody, .planes tr, .planes td, .planes th { display: block; width: auto; } .planes thead { display: none; } .planes td:first-child::before { content: "Gratis: "; font-weight: 700; } .planes td:last-child::before { content: "Pro: "; font-weight: 700; color: var(--accent); } }
+@media (prefers-color-scheme: dark) { .con { background: #1f3a2b; } .tienda, .sello { color: #0f2a1c; } .con::before, .planes th:last-child { color: var(--accent); } }
 @media (max-width: 480px) { header, main, footer { padding-left: 20px; padding-right: 20px; } header { align-items: flex-start; flex-direction: column; gap: 8px; } main { padding-top: 36px; } }
 @media (prefers-color-scheme: dark) { :root { --paper: #15221b; --ink: #edf3ee; --muted: #b3c6b9; --line: #34473b; --accent: #8fd1a8; --card: #1d2d24; } }
 @media print { header, nav, footer, .skip { display: none; } body { background: white; color: black; font-size: 11pt; } main { max-width: none; padding: 0; } a { color: inherit; } }
