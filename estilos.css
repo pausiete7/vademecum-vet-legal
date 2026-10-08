@@ -51,6 +51,22 @@ footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 14px
 @media (max-width: 720px) { .hero { grid-template-columns: 1fr; } .movil { max-width: 260px; } .par { grid-template-columns: 1fr; } .sellos { grid-template-columns: 1fr; } .capturas { grid-template-columns: 1fr; max-width: 360px; } .planes, .planes thead, .planes tbody, .planes tr, .planes td, .planes th { display: block; width: auto; } .planes thead { display: none; } .planes td::before { content: attr(data-l); font-weight: 700; } .planes td:last-child::before { color: var(--accent); } }
 .faq details { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 18px; margin: 0 0 10px; }
 .faq summary { cursor: pointer; font-weight: 700; }
+.migas { font-size: 14px; color: var(--muted); margin: 0 0 18px; }
+.h1-ficha { font-size: clamp(26px, 5vw, 38px); letter-spacing: -.02em; overflow-wrap: anywhere; }
+.datos { width: 100%; border-collapse: collapse; margin: 10px 0 18px; font-size: 16px; }
+.datos th { text-align: left; vertical-align: top; width: 34%; padding: 10px 14px 10px 0; color: var(--muted); font-weight: 600; border-bottom: 1px solid var(--line); }
+.datos td { padding: 10px 0; border-bottom: 1px solid var(--line); }
+.presentaciones, .lista { padding-left: 20px; font-size: 16px; }
+.cn, .lab { color: var(--muted); font-size: 14px; white-space: nowrap; }
+.escaparate { background: var(--card); border: 2px solid var(--accent); border-radius: 16px; padding: 20px 24px; margin: 32px 0; }
+.escaparate h2 { margin-top: 0; }
+.escaparate ul { font-size: 17px; }
+.letras { display: flex; flex-wrap: wrap; gap: 6px 12px; font-size: 18px; font-weight: 700; }
+.columnas { columns: 3 220px; padding-left: 20px; font-size: 16px; }
+.lista-tabla { width: 100%; border-collapse: collapse; font-size: 15px; margin: 10px 0 18px; }
+.lista-tabla th { text-align: left; border-bottom: 2px solid var(--accent); padding: 8px 10px 8px 0; }
+.lista-tabla td { vertical-align: top; border-bottom: 1px solid var(--line); padding: 8px 10px 8px 0; }
+.catalogo { font-size: 17px; }
 .faq details p { margin: 10px 0 0; color: var(--muted); }
 @media (prefers-color-scheme: dark) { .con { background: #1f3a2b; } .tienda, .sello { color: #0f2a1c; } .con::before, .planes th:last-child { color: var(--accent); } }
 @media (max-width: 480px) { header, main, footer { padding-left: 20px; padding-right: 20px; } header { align-items: flex-start; flex-direction: column; gap: 8px; } main { padding-top: 36px; } }
